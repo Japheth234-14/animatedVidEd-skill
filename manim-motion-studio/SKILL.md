@@ -28,7 +28,7 @@ If system `ffmpeg` is missing, `scripts/setup_manim.sh` symlinks `imageio_ffmpeg
 ## Workflow
 
 1. **Pull brief, script, or data from Notion** (via connected Notion app or `scripts/notion_sync.py`) when working from a workspace storyboard or KPI table.
-2. **Choose the right Scene class & packages** from the capability matrix below (and `references/python-motion-ecosystem.md`).
+2. **Choose the right Scene class & packages** from the capability matrix below (and `references/python-motion-ecosystem.md` for the quick stack, `references/python-animation-library-catalogue.md` for the full 18-section catalogue).
 3. **Start from a verified template** in `templates/` or combine patterns from `references/`.
 4. **Preview fast at draft quality** (`--quality draft`) to verify timing, layout, camera tracking, and framing before a full 60fps render.
 5. **Render at target aspect ratio** using `scripts/render.py` (never combine `-qh` with custom `-r` dimensions).
@@ -48,6 +48,7 @@ If system `ffmpeg` is missing, `scripts/setup_manim.sh` symlinks `imageio_ffmpeg
 | **Code, Math, Physics & Graphs** | `Code`, `Table`, `Brace`, `SurroundingRectangle`, `apply_matrix`, `ComplexPlane`, `ArrowVectorField`, `StreamLines`, `Graph`/`DiGraph`, `add_updater(mob, dt)` | `references/3d-charts-physics-hybrid.md`<br>`templates/math_code_and_diagrams.py` |
 | **Hybrid Photo / CV Video** | `ImageMobject` + OpenCV (`cv2.inpaint`, `cv2.remap` `float32`) + MediaPipe `FaceLandmarker`/`HandLandmarker` | `references/3d-charts-physics-hybrid.md` |
 | **Broader Python Motion Ecosystem** | `manim-slides`, `manim-physics`, `manim-voiceover`, `av`, `moviepy`, `lottie`, `cairosvg`, `pytweening`, `pymunk`, `transitions`, `bpy`/`pyvista`, compatibility matrix | `references/python-motion-ecosystem.md` |
+| **Full Animation Library Catalogue** | 18-section catalogue: math/explainer, 2D/game, creative coding, vector/SVG, video editing, CV/AI, 3D, physics, charts, GUI, storytelling, easing, audio, adjacent tools, pip index, warnings, goal combos, core stack | `references/python-animation-library-catalogue.md` |
 | **Video Editing & AI Post-Production** | `scripts/video_edit.py`, `detect-scenes` (`PySceneDetect`), `auto-captions` (`faster-whisper`), `burn-subtitles`, `smart-reframe` (OpenCV tracking), `beat-markers` (`librosa`), `duck-audio`, `xfade` combine, mixed-aspect blurred padding, transparent `.mov` overlays, GIFs | `references/video-editing-postprod.md`<br>`scripts/video_edit.py` |
 | **Notion Production Workflows** | Connected Notion app + `scripts/notion_sync.py`: search, read briefs/storyboards, export DB metrics to JSON for Manim charts, create storyboard pages, update statuses, log rendered MP4 metadata, append blocks & comments | `references/notion-video-workflows.md`<br>`scripts/notion_sync.py` |
 
